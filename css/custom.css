@@ -1,12 +1,85 @@
 .bg-color {
-    background-color: #03A9f3;
+    background-color: var(--main-color);
+
 
 }
 
-div.container{
+.hero.container{
     padding-bottom: 20px;
+    background-image: url(../img/background.jpg);
+    background-image: bottom center;
+    background-image: cover;
+    
 }
+
+    .hero> .row-short{
+        text-align: center;
+    }
+
+    .hero img{
+        margin-bottom: var(--big-gap);
+    }
+
+    .hero h1{
+        display: inline-block;
+        width: 100%;
+        color: black;
+        font-size: 55px;
+        line-height: 55px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: var(--gap);
+
+
+    }
+
+    .hero p{
+        display: inline-block;
+        width: 100%;
+        color: gray;
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: var(--big-gap);
+
+    }
+
+    .hero .clock {
+        margin-bottom: var(--big-gap);
+    }
+
+    .hero .form{
+        margin-bottom: var(--gap);
+    }
+
+
+    main h2{
+        font-size: 20px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: black;
+        margin-bottom:20px ;
+    }
+
+    main p{
+        font-size: 15px;
+        line-height: 24px;
+        color: #555;
+        margin-bottom:20px ;
+
+    }
+
+    main p > a {
+        color: var(--secondary-color);
+        text-decoration: none;
+
+    }
+
+    main p> a:hover{
+        text-decoration: underline overline;
+
+    }
 
 footer.container{
     padding-top: 0px;
 }
+

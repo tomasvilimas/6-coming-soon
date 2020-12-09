@@ -10,28 +10,28 @@ grid-template-columns: 1fr 200px 600px 200px 1fr;
 padding: 40px 0;
 
 }
-    .container > .short{
+    .container > .row-short{
      grid-column: 3/4;
-     background-color: aqua;
+    
     
     
     }
 
-     .container > .long{
+     .container > .row-long{
      grid-column: 2/5;
-        background-color:pink ;
+        
     }      
-     .container> .long.columns {
+     .container> .row-long.columns {
                display: grid;
                grid-template-columns: 5fr 1fr 4fr;
 
             }
 
-               .container> .long.columns> .left{
+               .container> .row-long.columns> .left{
                    grid-column: 1/2;
                }
 
-               .container> .long.colums> .right{
+               .container> .row-long.columns> .right{
                    grid-column: 3/4;
                }
 
@@ -54,16 +54,16 @@ padding: 40px 0;
 }
         
     
-    .container > .short{
+    .container > .row-short{
      grid-column: 2/3;
-     background-color: aqua;
+     
     
     
     }
 
-     .container > .long{
+     .container > .row-long{
      grid-column: 2/3;
-        background-color:pink ;
+        
           
 
 }
@@ -79,7 +79,7 @@ padding: 40px 0;
         
 }
 
-.container> .long.columns {
+.container> .row-long.columns {
    
     grid-template-columns: 1fr ;
 
@@ -87,7 +87,7 @@ padding: 40px 0;
 
     
 
-    .container> .long.colums> .right{
+    .container> .row-long.columns> .right{
         grid-column: 1/2;
     }
 
