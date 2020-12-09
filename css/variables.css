@@ -1,0 +1,11 @@
+:root{
+    --gap: 20px;
+    --big-gap: calc(2.5* var(--gap));
+    --main-color: #03A9f3;
+    --secondary-color: #EA1E69
+
+
+}
+
+
+
