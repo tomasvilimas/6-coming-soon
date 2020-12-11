@@ -81,5 +81,83 @@
 
 footer.container{
     padding-top: 0px;
+    text-align: center;
 }
 
+footer> .row-long{
+    padding:15px ;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+
+footer .fa {
+    color: white;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+
+
+}
+
+footer .fa:hover {
+    background-color: white;
+    color: var(--main-color)
+
+
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+
+
+}
+
+footer img{
+
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+footer p{
+    display: inline-block;
+    width: 100%;
+    font-size: 17px;
+    line-height: 25px;
+    color: #fff9 ; 
+
+}
+
+footer p > span {
+    padding:  0 10px;
+    position: relative;
+}
+
+footer p > span + span::before {
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 1px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: -2px;
+    transform: translatey(-50%);
+    
+
+}
+
+@media( max-width: 640px){
+    footer p> span{
+display: inline-block;    
+width: 100%;
+}
+  footer p> span+ span::before {
+      display: none;
+  }
+
+
+}
