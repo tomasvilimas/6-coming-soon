@@ -22,6 +22,11 @@ for( let i=0 ; i<data.length; i++) {
         continue;
     }
 
+    // for (let item of data) {
+    //     if (!isValidSocialItem(item)) {
+    //         continue;
+    //     }
+
     
        
 
