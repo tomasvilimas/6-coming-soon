@@ -48,8 +48,18 @@
     }
 
     .hero .form{
-        margin-bottom: var(--gap);
+        width: 80%;
+        margin: 0 10% var(--gap);
+        
     }
+
+    .hero .form > .input{
+        background-color: transparent;
+        color: white;
+        border-color: white;
+    }
+    
+
 
 
     main h2{
@@ -78,6 +88,12 @@
         text-decoration: underline overline;
 
     }
+
+    main .form > button{
+        float: right;
+    }
+
+    
 
 footer.container{
     padding-top: 0px;
@@ -159,5 +175,23 @@ width: 100%;
       display: none;
   }
 
+  .hero .form{
+    width: 100%;
+    margin: 0 0 var(--gap);
 
-}
+  }
+  @media(min-width: 1200px  ){
+
+    main .form> input.input{
+
+        width: 47%;
+        float: left;
+
+    }
+
+    main .form> input.input + input.input{
+
+        margin-left: 6%;
+
+    }
+  }

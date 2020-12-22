@@ -82,6 +82,7 @@ padding: 40px 0;
 .container> .row-long.columns {
    
     grid-template-columns: 1fr ;
+    gap: 40px;
 
  }
 
