@@ -1,14 +1,14 @@
 class Clock {
 
-    constructor(selector) {
+    constructor(selector,) {
         this.selector= selector;
         this.now = Date.now();
     
         this.deadline={
             year: (new Date()).getFullYear(),
-            month:11,
-            day:16,
-            hour: 10,
+            month:1,
+            day:1,
+            hour: 0,
             minutes: 0,
             seconds: 0,
 
@@ -32,7 +32,7 @@ class Clock {
 
         createDateString() {
             const { year, month, day, hour, minutes, seconds }= this.deadline;
-            return `${year}-${month}-${day}-${hour}-${minutes}-${seconds}`;
+            return `${year}-${month}-${day} ${hour}:${minutes}:${seconds}`;
         }
 
         ArBusMetines() {
@@ -69,7 +69,7 @@ class Clock {
         }
 
         start(){
-            const jubiliejausMiliseconds= (new Date(this.dateString)).getTime();
+            let jubiliejausMiliseconds= (new Date(this.dateString)).getTime();
 
             setInterval(() => {
 
@@ -82,6 +82,11 @@ class Clock {
                 secondsLeft-= days* 60 * 60 *24;
                 const hours= Math.floor (secondsLeft/ 60 / 60);
 
+                secondsLeft-= hours * 60 * 60;
+                const minutes= Math.floor(secondsLeft/60 );
+
+                secondsLeft-= minutes* 60;
+
                 
 
 
@@ -90,8 +95,8 @@ class Clock {
 
             this.DOMdays.innerText= days;
             this.DOMhour.innerText= hours;
-            this.DOMminutes.innerText= now.getMinutes();
-            this.DOMseconds.innerText= now.getSeconds();
+            this.DOMminutes.innerText= minutes;
+            this.DOMseconds.innerText= secondsLeft;
 
 
                 
